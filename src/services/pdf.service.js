@@ -1,6 +1,7 @@
 import puppeteer from 'puppeteer'
 
 export const htmlToPDF = async (html) => {
+    console.log('Generando PDF a partir del HTML...')
     const browser = await puppeteer.launch({
         args: [
             '--no-sandbox',
